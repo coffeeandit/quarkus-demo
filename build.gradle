@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'io.quarkus' version '0.18.0'
+}
+
+group 'br.com.cdsoft'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation enforcedPlatform('io.quarkus:quarkus-bom:0.18.0')
+    implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'io.quarkus:quarkus-resteasy-jsonb'
+    implementation 'io.quarkus:quarkus-hibernate-orm-panache'
+    implementation 'io.quarkus:quarkus-smallrye-reactive-messaging-kafka'
+
+    implementation 'io.quarkus:quarkus-jdbc-postgresql'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.6'
+    compile group: 'io.netty', name: 'netty-codec', version: '4.1.37.Final'
+
+
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'io.quarkus', name: 'quarkus-junit5', version: '0.18.0'
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.3.0'
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
