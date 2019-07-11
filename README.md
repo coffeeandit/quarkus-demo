@@ -3,7 +3,7 @@
 Canal dedicado para Engenheiros de Software, Engenheiros de Infraestrutura, Engenheiros de SRE, Arquitetos , Agilistas enfim todos os amantes em geral do fantástico mundo de entrega de software e Cloud Computing.
 Essa demo é para o framework Quarkus.
 
-https://www.youtube.com/channel/UCarIyS19yF3DbK63mJq-Adw
+Canal no Youtube: https://www.youtube.com/channel/UCarIyS19yF3DbK63mJq-Adw
 
 # Quarkus
 
